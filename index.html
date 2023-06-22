@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="restaurent-title">
+                <h1>Harsha's Diner</h1>
+                <p>The best burgers and pizzas in town.</p>
+            </div>
+        </header>
+        <main>
+            <section class="menu" id="menu">
+
+            </section>
+            <section class="form-details" id="form-details">
+                <h2 class="center">Enter card details</h2>
+                <form id="customer-form">
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter your name" required>
+                    <input type="text" name="card-number" id="card-number" placeholder="Enter card number" required>
+                    <input type="text" name="cvv" id="cvv" placeholder="Enter CVV" required>
+                    <button type="submit" id="purchase-btn">Pay</button>
+                </form>
+            </section>
+            <section class="order-placed">
+                <div class="confirm-message" id="confirm-message">
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="order-details hidden" id="order-details">
+                <p class="center title">Your order</p>
+                <div class="order-list" id="order-list">
+                    
+                </div>
+                <div class="order-price">
+                    <p class="title align-center">Total price: </p>
+                    <p class="right-end" id="order-price"></p>
+                </div>
+                <button id="order-btn">Complete Order</button>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
